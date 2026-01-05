@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Portfólio | CENNA</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Confira alguns projetos audiovisuais da CENNA." />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">CENNA</div>
+
+            <nav class="nav">
+                <a href="index.html">Início</a>
+                <a href="portfolio.html">Portfólio</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="contato.html" class="btn-nav">Contato</a>
+            </nav>
+
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- MENU MOBILE -->
+    <div class="menu-mobile" id="menu-mobile">
+        <a href="index.html">Início</a>
+        <a href="portfolio.html">Portfólio</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+    </div>
+
+    <!-- PORTFÓLIO -->
+    <section class="portfolio-page">
+        <div class="container">
+            <h1>Portfólio</h1>
+            <p class="portfolio-description">
+                Alguns projetos que representam o estilo e a identidade da CENNA.
+            </p>
+
+            <div class="portfolio-grid">
+
+                <!-- CARD VÍDEO -->
+                <div class="portfolio-item">
+                    <div class="video-placeholder">Vídeo</div>
+
+                    <div class="portfolio-info">
+                        <h3>Projeto 01</h3>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga in amet quisquam, accusantium
+                            ut aperiam cupiditate eaque obcaecati deleniti incidunt non, facere officia, dicta iusto
+                            eius corporis veritatis placeat tenetur!</p>
+                    </div>
+                </div>
+
+
+                <div class="portfolio-item">
+                    <div class="video-placeholder">Vídeo</div>
+                    <div class="portfolio-info">
+                        <h3>Projeto 02</h3>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga in amet quisquam, accusantium
+                            ut aperiam cupiditate eaque obcaecati deleniti incidunt non, facere officia, dicta iusto
+                            eius corporis veritatis placeat tenetur!</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="video-placeholder">Vídeo</div>
+                    <div class="portfolio-info">
+                        <h3>Projeto 03</h3>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga in amet quisquam, accusantium
+                            ut aperiam cupiditate eaque obcaecati deleniti incidunt non, facere officia, dicta iusto
+                            eius corporis veritatis placeat tenetur!</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="video-placeholder">Vídeo</div>
+                    <div class="portfolio-info">
+                        <h3>Projeto 04</h3>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga in amet quisquam, accusantium
+                            ut aperiam cupiditate eaque obcaecati deleniti incidunt non, facere officia, dicta iusto
+                            eius corporis veritatis placeat tenetur!</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="video-placeholder">Vídeo</div>
+                    <div class="portfolio-info">
+                        <h3>Projeto 05</h3>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga in amet quisquam, accusantium
+                            ut aperiam cupiditate eaque obcaecati deleniti incidunt non, facere officia, dicta iusto
+                            eius corporis veritatis placeat tenetur!</p>
+                    </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta">
+        <div class="container">
+            <a href="contato.html" class="btn-primary">Fale Conosco</a>
+        </div>
+    </section>
+
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu-mobile');
+
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.menu-mobile a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
