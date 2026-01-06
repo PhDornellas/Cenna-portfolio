@@ -42,12 +42,12 @@ body {
   height: 70px;
 }
 
-.logo {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--pink);
-  letter-spacing: 2px;
+.logo img {
+  height: 40px;
+  width: auto;
+  display: block;
 }
+
 
 .nav a {
   color: var(--white);
@@ -264,6 +264,12 @@ body {
 
   .menu-toggle {
     display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    height: 32px;
   }
 }
 
