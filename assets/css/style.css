@@ -273,6 +273,17 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-image {
+    margin-top: 30px;
+  }
+}
+
+
 
 /* =========================
    PORTFÓLIO
@@ -462,3 +473,57 @@ body {
   opacity: 0.8;
   line-height: 1.4;
 }
+
+.about-content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.about-info {
+  flex: 1;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+/* /ate te a foto */
+
+
+.image-placeholder {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  background: #111;
+  border: 2px dashed #ff008c;
+  color: #ff008c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* /ate te a foto */
+
+
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.contact-card .icon {
+  width: 36px;
+  height: 36px;
+}
+
+.contact-card .icon {
+  filter: brightness(0) saturate(100%) invert(42%) sepia(92%) saturate(3530%) hue-rotate(300deg);
+}
+
