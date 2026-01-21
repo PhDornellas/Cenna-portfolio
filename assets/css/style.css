@@ -61,10 +61,9 @@ body {
   color: var(--pink);
 }
 
-.btn-nav {
-  border: 1px solid var(--pink);
-  padding: 8px 16px;
-  border-radius: 4px;
+.nav a.active {
+  color: var(--pink);
+  font-weight: 600;
 }
 
 
@@ -267,6 +266,10 @@ body {
 /* Menu ativo */
 .menu-mobile.active {
   transform: translateY(0);
+}
+
+.menu-mobile a.active {
+  color: var(--pink);
 }
 
 /* =========================
