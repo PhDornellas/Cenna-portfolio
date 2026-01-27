@@ -297,6 +297,22 @@
         });
     </script>
 
+    <script>
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu-mobile');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+
+  document.querySelectorAll('.menu-mobile a').forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.remove('active');
+    });
+  });
+</script>
+
+
 </body>
 
 </html>
